@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://cav64h7c0ckph"]
+
+[ext_resource type="Script" uid="uid://bxbu3s5tyd2xn" path="res://states/title_state/title_scene.gd" id="1_helya"]
+[ext_resource type="PackedScene" uid="uid://bducyau331edj" path="res://states/world_state/world_scene.tscn" id="2_b3fhm"]
+[ext_resource type="Texture2D" uid="uid://dke46e0dvw40" path="res://icon.svg" id="3_6myxw"]
+[ext_resource type="Theme" uid="uid://bibbrrx3ud3nw" path="res://UI/ui_theme.tres" id="4_wty5e"]
+
+[node name="TitleScene" type="Node2D" unique_id=888111263]
+script = ExtResource("1_helya")
+duration = 0.5
+new_scene = ExtResource("2_b3fhm")
+
+[node name="CanvasModulate" type="CanvasLayer" parent="." unique_id=402331470]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasModulate" unique_id=1293033050]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Icon" type="Sprite2D" parent="CanvasModulate" unique_id=397564317]
+position = Vector2(195, 90)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_6myxw")
+offset = Vector2(0.5, 0.5)
+
+[node name="Label" type="Label" parent="CanvasModulate" unique_id=1333362318]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.5
+offset_top = -50.0
+offset_right = 28.5
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+theme = ExtResource("4_wty5e")
+text = "Developed by"
+horizontal_alignment = 1

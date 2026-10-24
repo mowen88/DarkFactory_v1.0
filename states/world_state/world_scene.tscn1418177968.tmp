@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bducyau331edj"]
+
+[ext_resource type="Script" uid="uid://5gsay42c5g8a" path="res://states/world_state/world_scene.gd" id="1_l5drm"]
+[ext_resource type="PackedScene" uid="uid://bv5jxgouo7rs" path="res://states/world_state/player/player.tscn" id="2_dbd73"]
+[ext_resource type="Script" uid="uid://soqkms56nj1c" path="res://states/world_state/camera.gd" id="3_6v4pk"]
+
+[node name="WorldScene" type="Node2D" unique_id=1727845536]
+script = ExtResource("1_l5drm")
+
+[node name="RoomContainer" type="Node2D" parent="." unique_id=276939738]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1758284162]
+script = ExtResource("3_6v4pk")
+
+[node name="Player" parent="." unique_id=1814741006 instance=ExtResource("2_dbd73")]

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bv5jxgouo7rs"]
+
+[ext_resource type="Script" uid="uid://dn7wr5r8cy3p4" path="res://states/world_state/player/player.gd" id="1_0ghty"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e6d6c"]
+size = Vector2(14, 30)
+
+[node name="Player" type="CharacterBody2D" unique_id=1814741006]
+collision_layer = 2
+script = ExtResource("1_0ghty")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1293160461]
+position = Vector2(0, -15)
+shape = SubResource("RectangleShape2D_e6d6c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=202208735]
+position = Vector2(0, -15)

@@ -1,0 +1,46 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="DarkFactory-v1.0"
+run/main_scene="uid://d0iw05wssdaer"
+config/features=PackedStringArray("4.6", "Mobile")
+boot_splash/show_image=false
+config/icon="res://icon.svg"
+
+[autoload]
+
+Transition="*uid://x518ebjhtlpv"
+SignalBus="*uid://bth75b5naq261"
+
+[display]
+
+window/size/viewport_width=390
+window/size/viewport_height=180
+window/size/window_width_override=2340
+window/size/window_height_override=1080
+window/stretch/mode="canvas_items"
+
+[layer_names]
+
+2d_render/layer_1="solid_tiles"
+2d_render/layer_2="player"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="mobile"
+environment/defaults/default_clear_color=Color(0.22352941, 0.16078432, 0.27450982, 1)

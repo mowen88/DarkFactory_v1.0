@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://jwkaibwlw8bn"]
+
+[ext_resource type="Script" uid="uid://bcll2j3huqi4t" path="res://states/world_state/exit_scene/exit_scene.gd" id="1_i3aaj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v2ffa"]
+size = Vector2(60, 60)
+
+[node name="ExitScene" type="Area2D" unique_id=1679825303]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_i3aaj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1075750213]
+shape = SubResource("RectangleShape2D_v2ffa")

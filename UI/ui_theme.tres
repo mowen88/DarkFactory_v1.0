@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://bibbrrx3ud3nw"]
+
+[ext_resource type="FontFile" uid="uid://s26iyw0momur" path="res://UI/font/homespun.ttf" id="1_it55r"]
+
+[resource]
+default_font = ExtResource("1_it55r")
+default_font_size = 10
